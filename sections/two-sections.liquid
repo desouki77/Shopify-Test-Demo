@@ -1,0 +1,49 @@
+<div class="custom-section">
+  <div class="section-one">
+    <h1>{{ section.settings.heading_one }}</h1>
+    <p>{{ section.settings.text_one }}</p>
+    <a href="{{ section.settings.button_url }}" class="btn">{{ section.settings.button_text }}</a>
+  </div>
+  <div class="section-two">
+    <h2>{{ section.settings.heading_two }}</h2>
+    <p>{{ section.settings.text_two }}</p>
+  </div>
+</div>
+
+{% schema %}
+{
+  "name": "Two Sections",
+  "settings": [
+    {
+      "type": "text",
+      "id": "heading_one",
+      "label": "Heading for Section 1"
+    },
+    {
+      "type": "textarea",
+      "id": "text_one",
+      "label": "Text for Section 1"
+    },
+    {
+      "type": "url",
+      "id": "button_url",
+      "label": "Button URL"
+    },
+    {
+      "type": "text",
+      "id": "button_text",
+      "label": "Button Text"
+    },
+    {
+      "type": "text",
+      "id": "heading_two",
+      "label": "Heading for Section 2"
+    },
+    {
+      "type": "textarea",
+      "id": "text_two",
+      "label": "Text for Section 2"
+    }
+  ]
+}
+{% endschema %}
